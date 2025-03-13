@@ -1,0 +1,163 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f9a8d4, #f0c9f4); 
+    color: #fff;
+    line-height: 1.6;
+    padding: 50px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes.png');  
+    transform: scale(0.95);
+    animation: zoomIn 1s ease-out forwards; 
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #ff77b6; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 119, 182, 0.8); 
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #ff77b6; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+    animation: bounce 1.5s infinite; 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-bottom: 25px;
+    font-family: 'Courgette', cursive; 
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #ff6f91; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; 
+}
+
+p strong {
+    color: #ff77b6; 
+}
+
+p {
+    font-size: 1.2rem;
+    color: #6a4e77; 
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* List Items (Interests, Hobbies, Skills) */
+ul li {
+    background-color: #f8bbd0;
+    color: #fff;
+    border-radius: 25px;
+    padding: 12px 30px;
+    margin: 10px;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+    background-color: #d116a2; 
+    transform: translateY(-5px) rotate(3deg); 
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(255, 119, 182, 0.8); 
+}
+
+footer {
+    margin-top: 40px;
+    color: #ff77b6;
+    font-size: 1rem;
+    font-family: 'Courgette', cursive; 
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #6a4e77;
+    font-family: 'Courgette', cursive;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
